@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bSm-Yr-rmM" customClass="NewFeedHorizontalItemCollectionViewCell" customModule="shopping_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="479"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="479"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="saD-nz-h3b" customClass="RoundedUIImageView" customModule="shopping_app" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="479"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vb2-G3-RNL" customClass="CardView" customModule="AKoneYa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="407" width="390" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bh4-C6-Iqa" customClass="RoundedUIImageView" customModule="shopping_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="72"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-QC-7jx">
+                                <rect key="frame" x="10" y="10" width="370" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z4F-QC-7jx" secondAttribute="trailing" constant="10" id="IIk-Dg-jDc"/>
+                            <constraint firstAttribute="bottom" secondItem="Z4F-QC-7jx" secondAttribute="bottom" constant="10" id="OhA-f1-Qd9"/>
+                            <constraint firstItem="bh4-C6-Iqa" firstAttribute="top" secondItem="Vb2-G3-RNL" secondAttribute="top" id="WNf-Ns-c1x"/>
+                            <constraint firstAttribute="bottom" secondItem="bh4-C6-Iqa" secondAttribute="bottom" id="WSW-y6-Ou5"/>
+                            <constraint firstItem="bh4-C6-Iqa" firstAttribute="leading" secondItem="Vb2-G3-RNL" secondAttribute="leading" id="Xeh-N9-oR0"/>
+                            <constraint firstAttribute="height" constant="72" id="Y4Y-qe-6Vn"/>
+                            <constraint firstAttribute="trailing" secondItem="bh4-C6-Iqa" secondAttribute="trailing" id="e16-wL-2XB"/>
+                            <constraint firstItem="Z4F-QC-7jx" firstAttribute="leading" secondItem="Vb2-G3-RNL" secondAttribute="leading" constant="10" id="eWI-0P-8az"/>
+                            <constraint firstItem="Z4F-QC-7jx" firstAttribute="top" secondItem="Vb2-G3-RNL" secondAttribute="top" constant="10" id="iFL-Of-SyZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="showColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ARX-09-r8z"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="saD-nz-h3b" firstAttribute="top" secondItem="bSm-Yr-rmM" secondAttribute="top" id="N6R-RG-yYA"/>
+                <constraint firstItem="saD-nz-h3b" firstAttribute="leading" secondItem="bSm-Yr-rmM" secondAttribute="leading" id="ScT-HD-tOS"/>
+                <constraint firstItem="Vb2-G3-RNL" firstAttribute="leading" secondItem="bSm-Yr-rmM" secondAttribute="leading" id="Xf4-Ak-zkn"/>
+                <constraint firstAttribute="bottom" secondItem="Vb2-G3-RNL" secondAttribute="bottom" id="b9X-K2-1dg"/>
+                <constraint firstAttribute="trailing" secondItem="saD-nz-h3b" secondAttribute="trailing" id="ehH-Mw-4FA"/>
+                <constraint firstAttribute="trailing" secondItem="Vb2-G3-RNL" secondAttribute="trailing" id="h51-1X-Q1x"/>
+                <constraint firstAttribute="bottom" secondItem="saD-nz-h3b" secondAttribute="bottom" id="zjg-Rd-Jjs"/>
+            </constraints>
+            <size key="customSize" width="390" height="479"/>
+            <connections>
+                <outlet property="imgNewFeed" destination="saD-nz-h3b" id="8n9-Aj-TLq"/>
+                <outlet property="imgTransparntBG" destination="bh4-C6-Iqa" id="6C8-No-0Kg"/>
+                <outlet property="lblTitle" destination="Z4F-QC-7jx" id="u3S-gE-Q0o"/>
+                <outlet property="titleView" destination="Vb2-G3-RNL" id="dHb-0I-tw1"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="282.25446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="saD-nz-h3b">
+            <size key="intrinsicContentSize" width="329" height="185"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_placeholder" width="329" height="185"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

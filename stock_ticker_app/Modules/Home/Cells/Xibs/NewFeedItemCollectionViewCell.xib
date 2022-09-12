@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vmZ-jc-OI2" customClass="NewFeedItemCollectionViewCell" customModule="shopping_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="734" height="373"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="734" height="373"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-Et-hpg">
+                        <rect key="frame" x="0.0" y="0.0" width="293.5" height="373"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wsk-gi-sy1">
+                        <rect key="frame" x="305.5" y="10" width="418.5" height="353"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In China's 'zero-Covid' lockdowns, patients with other diseases are struggling to survive" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVu-Et-BjE">
+                                <rect key="frame" x="0.0" y="0.0" width="418.5" height="89"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-04-01T06:33:37Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-ln-BjF">
+                                <rect key="frame" x="0.0" y="99" width="418.5" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUC-AE-n74">
+                                <rect key="frame" x="0.0" y="153" width="418.5" height="200"/>
+                                <string key="text">On a cold March afternoon in a locked-down city in China's northeastern Jilin province, Chang Liping was standing outside a hospital, desperate and unsure of where to go.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="gIw-4h-iN2"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wsk-gi-sy1" firstAttribute="leading" secondItem="7HG-Et-hpg" secondAttribute="trailing" constant="12" id="66v-0c-DjE"/>
+                <constraint firstItem="7HG-Et-hpg" firstAttribute="top" secondItem="vmZ-jc-OI2" secondAttribute="top" id="B1l-ie-EPx"/>
+                <constraint firstItem="7HG-Et-hpg" firstAttribute="leading" secondItem="vmZ-jc-OI2" secondAttribute="leading" id="KqS-VM-u0P"/>
+                <constraint firstAttribute="bottom" secondItem="7HG-Et-hpg" secondAttribute="bottom" id="QVi-sC-cAv"/>
+                <constraint firstAttribute="bottom" secondItem="Wsk-gi-sy1" secondAttribute="bottom" constant="10" id="blI-ID-FKB"/>
+                <constraint firstItem="7HG-Et-hpg" firstAttribute="width" secondItem="vmZ-jc-OI2" secondAttribute="width" multiplier="0.4" id="ogY-pt-1sf"/>
+                <constraint firstAttribute="trailing" secondItem="Wsk-gi-sy1" secondAttribute="trailing" constant="10" id="qZr-j1-DxE"/>
+                <constraint firstItem="Wsk-gi-sy1" firstAttribute="top" secondItem="vmZ-jc-OI2" secondAttribute="top" constant="10" id="z5A-wb-RQg"/>
+            </constraints>
+            <size key="customSize" width="734" height="373"/>
+            <connections>
+                <outlet property="imgNewFeed" destination="7HG-Et-hpg" id="qAl-FR-BQd"/>
+                <outlet property="lblDateTime" destination="4h4-ln-BjF" id="bff-4i-dpA"/>
+                <outlet property="lblDescription" destination="qUC-AE-n74" id="6Rg-jh-GwH"/>
+                <outlet property="lblTitle" destination="LVu-Et-BjE" id="1Ao-Ca-Fv9"/>
+            </connections>
+            <point key="canvasLocation" x="418.84057971014494" y="246.76339285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_placeholder" width="329" height="185"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
